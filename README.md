@@ -1,1 +1,6 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+Website template from [here](https://github.com/jonbarron/jonbarron.github.io).
+
+Serving locally:
+```bash
+cd /home/dean/Code/my_website && python3 -m http.server 8000
+```
