@@ -1,3 +1,5 @@
+website exists: [deanfortier.com](deanfortier.com)
+
 Website template from [here](https://github.com/jonbarron/jonbarron.github.io).
 
 Serving locally:
