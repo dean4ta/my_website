@@ -42,7 +42,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research and Engineering</h2>
+                <h2>Research Portfolio</h2>
                 <p>
                   I'm interested in robotics, computer vision, electronics, firmware, and deep learning. Most of my work is at the intersection of hardware, software, and control.
                 </p>
@@ -60,17 +60,19 @@
               Your browser does not support the video tag.
             </video>
           </div>
-          <img src='images/bb_head_no_background.png' width="160">
+          <img id="busybox_hero" src='images/bb_head_no_background.png' width="160">
         </div>
         <script type="text/javascript">
           function busybox_start() {
             document.getElementById('busybox_image').style.opacity = "1";
+            document.getElementById('busybox_hero').style.opacity = "0";
           }
 
           function busybox_stop() {
             document.getElementById('busybox_image').style.opacity = "0";
+            document.getElementById('busybox_hero').style.opacity = "1";
           }
-          busybox_stop()
+          busybox_stop();
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
@@ -93,6 +95,56 @@
         <p></p>
         <p>
         Modular 3D-printable robotic manipulation benchmark for evaluating affordance generalization in robot foundation models.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:16px;width:100%;vertical-align:middle" colspan="2">
+        <h2>Engineering Portfolio</h2>
+        <p>
+          Selected engineering and robotics projects demonstrating practical system integration, prototyping, and deployment.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="drillsense_stop()" onmouseover="drillsense_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='drillsense_image'>
+            <video width="160" height="100" muted autoplay loop style="object-fit: cover;">
+              <source src="images/drillsense_demo_captioned.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img id="drillsense_hero" src='images/drillsense_hero.png' width="160" alt="DrillSense hero image">
+        </div>
+        <script type="text/javascript">
+          function drillsense_start() {
+            document.getElementById('drillsense_image').style.opacity = "1";
+            document.getElementById('drillsense_hero').style.opacity = "0";
+          }
+
+          function drillsense_stop() {
+            document.getElementById('drillsense_image').style.opacity = "0";
+            document.getElementById('drillsense_hero').style.opacity = "1";
+          }
+          drillsense_stop();
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">DrillSense</span>
+        <br>
+        <a href="https://www.linkedin.com/in/deanfortier/"><strong>Dean Fortier</strong></a>,
+        <a href="https://scholar.google.com/citations?user=-NVFbtsAAAAJ&hl=en&oi=ao">Timothy Adamson</a>,
+        <a href="https://www.linkedin.com/in/mitch-tolson">Mitch Tolson</a>
+        <br>
+        <em>for Genie Robotics, July 2025</em>
+        <br>
+        <a href="drillsense.html">DrillSense blog post</a>
+        <!-- Add blog post link here -->
+        <p></p>
+        <p>
+        DrillSense is a demonstration of an onsite journeyman level physical AI assistant. This assistant was capable of combining the accuracy of computer vision and robot control with high level reasoning and collaboration using OpenAI voice AI.
         </p>
       </td>
     </tr>
