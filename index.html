@@ -187,6 +187,43 @@
         We showcase an agentic system consisting of a voice agent front end for interacting with a user, a VLM to observe the state of the BusyBox, and a VLA to control bimanual manipulation of the Busybox
         </p>
       </td>
+    </tr>
+    <tr onmouseout="optitrack_stop()" onmouseover="optitrack_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='optitrack_image'>
+            <video width="146" height="170" muted autoplay loop style="object-fit: cover;">
+              <source src="images/motive_rviz.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img id="optitrack_hero" src='images/optitrack-vector-logo.png' width="160" alt="Optitrack hero image">
+        </div>
+        <script type="text/javascript">
+          function optitrack_start() {
+            document.getElementById('optitrack_image').style.opacity = "1";
+            document.getElementById('optitrack_hero').style.opacity = "0";
+          }
+
+          function optitrack_stop() {
+            document.getElementById('optitrack_image').style.opacity = "0";
+            document.getElementById('optitrack_hero').style.opacity = "1";
+          }
+          optitrack_stop();
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Optitrack ROS Support</span>
+        <br>
+        <a href="https://www.linkedin.com/in/deanfortier/"><strong>Dean Fortier</strong></a>,
+        <a href="https://www.linkedin.com/in/stuart-guarnieri-5393481/">Stuart Guarnieri</a>
+        <br>
+        <a href="https://github.com/OptiTrack/mocap4ros2_optitrack">github link</a>
+        <p></p>
+        <p>
+        This ROS2 driver allows Optitrack's NatNet streaming service to connect to robot applications easier.
+        </p>
+      </td>
     </tr>   
           </tbody></table>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
