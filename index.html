@@ -148,6 +148,48 @@
         </p>
       </td>
     </tr>
+    <tr onmouseout="hockey_stop()" onmouseover="hockey_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='hockey_image'>
+            <video width="100" height="160" muted autoplay loop style="object-fit: cover;">
+              <source src="images/hockey_bot_demo.MP4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img id="hockey_hero" src='images/Hockeybot-Hero-Shot.jpg' width="160" alt="Robotic Hockey table hero image">
+        </div>
+        <script type="text/javascript">
+          function hockey_start() {
+            document.getElementById('hockey_image').style.opacity = "1";
+            document.getElementById('hockey_hero').style.opacity = "0";
+          }
+
+          function hockey_stop() {
+            document.getElementById('hockey_image').style.opacity = "0";
+            document.getElementById('hockey_hero').style.opacity = "1";
+          }
+          hockey_stop();
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <span class="papertitle">Robotic Hockey table</span>
+        <br>
+        <a href="https://www.scottypaton.com/">Scotty Paton</a> (Design),
+        <a href="https://www.linkedin.com/in/nissa-van-meter/">Nissa van Meter</a> (Electrical),
+        <a href="https://www.linkedin.com/in/deanfortier/"><strong>Dean Fortier</strong></a> (Controls/Vision),
+        <a href="https://www.linkedin.com/in/samantha-sanders/">Sam Sanders</a> (PM),
+        <a href="https://www.linkedin.com/in/richard-brian-johnson/">Richard Johnson</a> (Tech),
+        <a href="https://www.grantritterdesigns.com/">Grant Ritter</a> (Mechanical)
+        <br>
+        <em>Microsoft Ignite 2020</em>
+        <br>
+        <a href="https://www.freshconsulting.com/work/microsoft-robotic-air-hockey/">Fresh Consulting Blog Post</a>
+        <p>
+        Microsoft AI partnered with us to develop a promotional hardware piece for the Autonomous Systems group. They needed a bold platform to deploy, test, and interact with AI models created with Project Bonsai. I built out the vision, calibration, and controls systems.
+        </p>
+      </td>
+    </tr>
     <tr onmouseout="interactive_busybox_stop()" onmouseover="interactive_busybox_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
