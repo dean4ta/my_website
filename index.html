@@ -190,6 +190,47 @@
         </p>
       </td>
     </tr>
+
+    <tr onmouseout="crowsnest_stop()" onmouseover="crowsnest_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='crowsnest_image'>
+            <video width="100" height="180" muted autoplay loop style="object-fit: cover;">
+              <source src="images/crows_demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <img id="crowsnest_hero" src='images/E-Power-tractor_01.jpg' width="160" alt="Crowsnest hero image">
+        </div>
+        <script type="text/javascript">
+          function crowsnest_start() {
+            document.getElementById('crowsnest_image').style.opacity = "1";
+            document.getElementById('crowsnest_hero').style.opacity = "0";
+          }
+
+          function crowsnest_stop() {
+            document.getElementById('crowsnest_image').style.opacity = "0";
+            document.getElementById('crowsnest_hero').style.opacity = "1";
+          }
+          crowsnest_stop();
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://www.deere.com/">
+          <span class="papertitle">Crowsnest - Tractor Bird's eye view</span>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/deanfortier/"><strong>Dean Fortier</strong></a>,
+        John Houston,
+        Vishal Prabhu
+        <br>
+        <em>for John Deere R&amp;D 2022</em>
+        <p></p>
+        <p>
+        We developed a multi-camera calibration system using visual fiducials printed on inter-locking floor mats to cover an arbitrarily wide area. This calibration system determines the 6D pose of each camera and projects all camera images onto a single plane allowing for a simulated 360&deg; view around the tractor.
+        </p>
+      </td>
+    </tr>
     <tr onmouseout="interactive_busybox_stop()" onmouseover="interactive_busybox_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
