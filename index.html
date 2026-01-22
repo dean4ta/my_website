@@ -51,6 +51,56 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+<tr onmouseout="rhoalpha_stop()" onmouseover="rhoalpha_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <a href="https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/">
+          <div class="one">
+            <div class="two" id='rhoalpha_image'>
+              <video width="160" height="100" muted autoplay loop style="object-fit: cover;">
+                <source src="images/aloha_rotate_busybox.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <img id="rhoalpha_hero" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2026/01/Rho-Alpha_hero_2000x1333-1024x682.jpg" width="160" height="100" style="object-fit: cover;" alt="Rho-alpha robotic manipulation">
+          </div>
+        </a>
+        <script type="text/javascript">
+          function rhoalpha_start() {
+            document.getElementById('rhoalpha_image').style.opacity = "1";
+            document.getElementById('rhoalpha_hero').style.opacity = "0";
+          }
+
+          function rhoalpha_stop() {
+            document.getElementById('rhoalpha_image').style.opacity = "0";
+            document.getElementById('rhoalpha_hero').style.opacity = "1";
+          }
+          rhoalpha_stop();
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/">
+          <span class="papertitle">Advancing AI for the physical world</span>
+        </a>
+        <br>
+        <a href="https://www.microsoft.com/en-us/research/people/akolobov/">Andrey Kolobov</a>,
+        <a href="https://www.linkedin.com/in/galen-mullins-b077a66a/">Galen Mullins</a>,
+        <a href="https://tesshellebrekers.com/">Tess Hellebrekers</a>,
+        <a href="https://www.mmurray.com/">Michael Murray</a>,
+        <a href="https://www.linkedin.com/in/deanfortier/"><strong>Dean Fortier</strong></a>,
+        <a href="https://www.linkedin.com/in/simran-bagaria-12bb79246/">Simran Bagaria</a>,
+        <a href="https://www.linkedin.com/in/harshavardhan-reddy18/">Harshavardhan Gajarla</a>,
+        <a href="https://www.microsoft.com/en-us/research/people/allorens/?msockid=086d971b30686dc43aa0822e312b6cba">Ashley Llorens</a>
+        <br>
+        <em>Microsoft Research Story</em>, 2026
+        <br>
+        <a href="https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/">Microsoft Blog Post</a>
+        <p></p>
+        <p>
+        Announces Rho-alpha (ρα), a tactile-aware vision-language-action (VLA+) model for robot control that translates natural language commands into bimanual manipulation behaviors, evaluated across dual-arm and humanoid platforms.
+        </p>
+      </td>
+    </tr>
+
 <tr onmouseout="busybox_stop()" onmouseover="busybox_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">

@@ -1,4 +1,4 @@
-website exists: [deanfortier.com](deanfortier.com)
+website exists: [deanfortier.com](https://deanfortier.com/)
 
 Website template from [here](https://github.com/jonbarron/jonbarron.github.io).
 
