@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Agibot A2 Box Packing Blog | Dean Fortier</title>
+    <meta name="author" content="Dean Fortier" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+    <style>
+      .blog-container {width:100%;max-width:800px;margin:0 auto;padding:0 0 40px 0;}
+      .hero {width:100%;border-radius:8px;object-fit:cover;}
+      .section {margin-top:32px;}
+      h1 {font-family:'Lato', Verdana, Helvetica, sans-serif;font-size:30px;font-weight:700;margin:24px 0 8px 0;}
+      .meta {font-size:12px;color:#555;margin-bottom:16px;}
+      .back {margin-top:40px;text-align:center;}
+      .code-inline {font-family:monospace;background:#f5f5f5;padding:2px 4px;border-radius:4px;}
+    </style>
+  </head>
+  <body>
+    <div class="blog-container">
+      <h1>Box Packing and Manipulation on the Agibot A2</h1>
+    <div class="meta">Authors: <strong><a href="index.html">Dean Fortier</a></strong>, <a href="https://www.linkedin.com/in/matthias-bothe/">Matthias Bothe</a>, <a href="https://www.linkedin.com/in/rushabh-jain-950153102/">Rushabh Jain</a> &mdash; for <a href="https://roboservice.io/">RoboService GmbH</a>. July&ndash;September 2026.</div>
+      <video width="100%" controls autoplay muted loop style="border-radius:8px;">
+        <source src="../images/pi05_success_combined.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="section" id="overview">
+        <h2>Overview</h2>
+        <p>From July to September 2026 I filled in on a RoboService team working to deliver box packing and manipulation skills on an Agibot A2 humanoid robot for Siemens. I advised on formalizing the team's model development pipeline so they could stop guessing which data works and start shipping working robot models.</p>
+        <h2>The Video</h2>
+        <p>The video above (shown at 2x speed) shows the working task end to end: the robot separates and picks packaging material, then performs the external pickup of the packed box. The first segment runs through separator handling; the second shows the pickup executed with the external setup.</p>
+        <h2>What I Did</h2>
+        <p>The team had the hardware and the ambition but was spending most of its time discovering what data would train. I brought in a structured pipeline: what to collect, how to process it, and which training techniques to apply with different models. Concretely:</p>
+        <ul>
+          <li>Advised on data collection procedures for the packing and manipulation task.</li>
+          <li>Formalized data processing steps so collected demos turned into usable training data.</li>
+          <li>Recommended training techniques and model choices to match the data they had.</li>
+        </ul>
+        <h2>Results</h2>
+        <p>The team went from trial-and-error data gathering to a repeatable pipeline and delivered working robot models to Siemens on schedule. The video is a demo of the final behavior running on the physical Agibot A2.</p>
+        </div>
+      <div class="back">
+        <a href="../index.html">&#8592; Back to main site</a>
+      </div>
+    </div>
+  </body>
+</html>
